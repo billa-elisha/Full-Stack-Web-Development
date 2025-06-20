@@ -4,3 +4,5 @@
 // console.log(window);
 // console.log(window.document);
 // alert,setTimeout,comfirm,prompt in js
+
+

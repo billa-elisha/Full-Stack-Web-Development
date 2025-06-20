@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- inserting html into your Document from javascript -->
+    <h1 id="t">Ading a list to the unordered list</h1>
+    <ul></ul>
+    <button onclick="maths()" id="btn">submit</button>
+    <p id="ans"></p>
+    <script>
+      // inserting an inner html
+      const list = `
+        <li>billa</li>
+        <li>elisha</li>
+        <li>gorden</li>
+        <li>clothilda</li>
+        <li>martin</li>`;
+
+      const ulElement = document.querySelector("ul");
+      ulElement.innerHTML = list;
+
+      //   Creating a new html element and putting it into the page
+      const title = document.createElement("h1");
+      // adding a class to the element
+      title.className = "mytitle";
+      // adding font size and color to the title
+      title.style.fontSize = "25px";
+      title.style.color = "green";
+      title.textContent = "this text was added from the javascript";
+      // displaying the element in the document
+      document.body.appendChild(title);
+      //   removing the first title
+      const t = document.querySelector("#t");
+      document.body.removeChild(t);
+
+      //   adding elements with for loop
+      for (let i = 0; 1 < 4; i++) {
+        let p = document.createElement("p");
+        p.textContent = i;
+        document.body.appendChild(p);
+      }
+      function maths() {
+        let value = prompt("solve 30-20");
+        if (value == 10) {
+          document.getElementById("ans").innerText = "You are right";
+          document.querySelector("button").style.backgroundColor = "green";
+        } else {
+          document.getElementById("ans").innerText = "You are not right";
+          document.querySelector("button").style.backgroundColor = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
