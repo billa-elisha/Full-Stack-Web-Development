@@ -1,0 +1,62 @@
+.container {
+  pad: 0;
+  margin: 0;
+}
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.grow-list {
+  position: relative;
+  right: 30%;
+}
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.list-items {
+  margin-right: 10px;
+}
+
+.nav-button {
+  background-color: rgb(119, 119, 218);
+  border-color: rgb(119, 119, 218);
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+  box-shadow: 0 0 0 rgb(119, 119, 218);
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+}
+.heading-text {
+  color: rgb(55, 55, 135);
+  font-size: 59px;
+  width: 350px;
+  justify-content: center;
+  position: relative;
+  left: 100px;
+  top: 60px;
+}
+span {
+  color: rgb(136, 69, 199);
+}
+.discription {
+  width: 300px;
+  position: relative;
+  left: 100px;
+  top: 50px;
+  color: gray;
+}
+.btn {
+  margin-top: 20px;
+  position: relative;
+  left: 100px;
+  top: 80px;
+  padding: 12px 20px;
+}

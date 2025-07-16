@@ -1,0 +1,31 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.line {
+  width: 2px;
+  height: 15px;
+  background-color: white;
+}
+.list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-left: 0px;
+}
+.list-item {
+  margin-right: 10px;
+}
+.button-small {
+  margin-right: 0;
+}
+.grow-list {
+  margin-right: 0;
+}
