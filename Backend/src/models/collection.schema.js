@@ -1,7 +1,7 @@
-import mangoose from "mangoose";
+import mongoose from "mongoose";
 
 // creating our collection data structure
-const collectionSchema = new mangoose.Schema(
+const collectionSchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -13,4 +13,4 @@ const collectionSchema = new mangoose.Schema(
   { timestaps: true }
 );
 
-export default mangoose.model("Collection", collectionSchema);
+export default mongoose.model("Collection", collectionSchema);
